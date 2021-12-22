@@ -6,7 +6,7 @@ Created on Tue Nov 23 13:46:25 2021
 """
 
 '''Download de dados mensais de corrente e camada de mistura, do modelo do Copernicus, disponivel em
-https://resources.marine.copernicus.eu/products. As mesmas coordenadas foram usadas, mas os dados sao de 2019
+https://resources.marine.copernicus.eu/products. Coordenadas : -50,-30,-10,-30, dados sao de 2019
 a 2021.'''
 
 import numpy as np
