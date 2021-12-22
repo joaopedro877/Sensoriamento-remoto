@@ -12,10 +12,9 @@ import  pandas as pd
 import netCDF4 
 
 
-''' os arquivos a serem concatenados devem ter o nome parecido e estar na mesma pasta. O script deve estar 
-tambem na mesma pasta para que os arquivos sejam lidos. Caso nao estejam vai dar erro'''
+''' os arquivos a serem concatenados devem estar na mesma pasta. Deve estar no formato abaixo para funcionar'''
 
-ds = xarray.open_mfdataset('AQUA_MODIS.*.nc',combine = 'nested', concat_dim="time")
+ds = xarray.open_mfdataset(C:/Users/jdebr/Documents/Oceanografia/Disciplinas/Semestre_2021.2/Introducao_a_geotecnologias/dados_level3/sea_level_anomaly_chl/*.nc',combine = 'nested', concat_dim="time")
 
 '''dando um nome e salvadano'''
 ds.to_netcdf('sstjan.nc')
