@@ -91,14 +91,13 @@ plt.xticks()
 
 '''Marcando pontos no mapa'''
 ax = plt.axes(projection=ccrs.PlateCarree())
-plt.contourf(lon, lat,((chl_jan[18])),transform=ccrs.PlateCarree(),cmap='Spectral_r')
+plt.title('Costa da Bahia')
+ax.set_extent([-39.75,-35.5, -18.3,-11.47], ccrs.PlateCarree())
+ax.coastlines(resolution='10m')
 '''adicionando lat e lon'''
 g = ax.gridlines(crs=ccrs.PlateCarree(), linestyle='-.', color='gray', draw_labels=True)
 g.ylabels_right = False
 g.xlabels_top = False
-ax.coastlines()
-plt.colorbar()
-plt.suptitle('Clorofila na superfície em janeiro de 2021(mg/m³) ')
 
 ###plotando os pontos em um mapa
 ax.plot((-38.56),(-13.0),color='red', marker='o',transform=ccrs.PlateCarree())
