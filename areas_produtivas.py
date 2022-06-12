@@ -5,7 +5,7 @@ Created on Sun Jun 12 15:51:50 2022
 @author: jdebr
 """
 
-''' Visualizando quantos meses cada pixel possui um valor de clorofila acima de 1 mg/m³'''
+''' Visualizando quantos meses cada pixel possui um valor de clorofila acima de 0.5 e  1 mg/m³'''
 ''' Indicando o mes da maior e menor concentracao de clorofila, similar ao que vi em alguns
 artigos->citar depois'''
 import numpy as np
